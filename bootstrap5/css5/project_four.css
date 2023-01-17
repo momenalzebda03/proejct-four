@@ -557,6 +557,50 @@ body {
 }
 
 /* end main4 */
+/* start table */
+.table-scroll {
+    width: 100%;
+    overflow: hidden;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+.table-scroll table {
+    width: 100%;
+}
+
+th {
+    background-color: var(--color_ccc);
+}
+
+.table-scroll th,
+.table-scroll td {
+    padding: 5px 10px;
+    border: 2px solid var(--color_eee);
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.div_col .div_table .table-scroll .table-wrap .main-table .my_image {
+    display: flex;
+    justify-content: center;
+}
+
+.div_col .div_table .table-scroll .table-wrap .main-table .my_image img {
+    position: relative;    
+    width: 40px;
+    border: 3px solid var(--color_white);
+    border-radius: 50%;
+}
+
+.here_color {
+    color: var(--color_white);
+}
+
+/* end table */
 /* start media */
 @media (max-width: 1285px) and (min-width: 0px) {
 
