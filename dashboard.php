@@ -108,7 +108,18 @@
                             <div class="div_welcome">
                                 <div class="my_welcome">
                                     <h5 class="welcome">welcome</h5>
-                                    <p class="my_color">momen</p>
+                                    <?php
+
+                                    $louk_id = $_GET["louk_session"];
+
+                                    $table = $data->query("select * from singup where id = $louk_id");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p class='my_color'>" . $row["name"] . "</p>";
+                                        }
+                                    }
+                                    ?>
                                 </div>
                                 <div class="div_image">
                                     <img src="image5/welcome.png" alt="">
@@ -120,7 +131,17 @@
                             <hr>
                             <div class="div_flex">
                                 <div class="div_flex1">
-                                    <p>momen alzebda</p>
+                                    <?php
+                                    $louk_id = $_GET["louk_session"];
+
+                                    $table = $data->query("select * from singup where id = $louk_id");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p>" . $row["name"] . "</p>";
+                                        }
+                                    }
+                                    ?>
                                     <p class="my_color">developer</p>
                                 </div>
                                 <div class="div_flex2">
@@ -146,8 +167,15 @@
                                             print "<p>" . $row["money"] . "</p>";
                                         }
                                     }
+
+                                    $table = $data->query("select * from dashboard");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p class='my_color'>" . $row["jop"] . "</p>";
+                                        }
+                                    }
                                     ?>
-                                    <p class="my_color">stack</p>
                                 </div>
                             </div>
                             <hr>
@@ -180,7 +208,7 @@
                                 <input type="text" placeholder="Title number project" name="title">
                                 <br>
                                 <br>
-                                <textarea name="thought" placeholder="your thought the money"></textarea>
+                                <textarea name="thought" placeholder="your thought the money the name"></textarea>
                                 <div class="div_text_right">
                                     <button class="btn btn-primary" name="save">save</button>
                                 </div>
@@ -197,7 +225,16 @@
                                 </div>
                                 <div class="div_my_left">
                                     <p class="my_color">money</p>
-                                    <h6 class="welcome">$20.000</h6>
+                                    <?php
+
+                                    $table = $data->query("select * from table_number");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h6 class='welcome'>" . $row["money"] . "</h6>";
+                                        }
+                                    }
+                                    ?>
                                     <div class="div_input"></div>
                                     <div class="div_input1" style="width: 200px; background-color: blue;"></div>
                                     <div class="my_number1" style="background-color: rgba(0, 0, 255, 0.874);">80%</div>
@@ -209,7 +246,16 @@
                                 </div>
                                 <div class="div_my_left">
                                     <p class="my_color">project</p>
-                                    <h6 class="welcome">24</h6>
+                                    <?php
+
+                                    $table = $data->query("select * from table_number");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h6 class='welcome'>" . $row["project"] . "</h6>";
+                                        }
+                                    }
+                                    ?>
                                     <div class="div_input"></div>
                                     <div class="div_input2" style="width: 120px; background-color: orange;"></div>
                                     <div class="my_number1" style="background-color: orange;">55%</div>
@@ -220,8 +266,17 @@
                                     <i class="far fa-user" style="padding: 200%; background-color: rgba(0, 128, 0, 0.353); color: green;"></i>
                                 </div>
                                 <div class=" div_my_left">
-                                    <p class="my_color">money</p>
-                                    <h6 class="welcome">$20.000</h6>
+                                    <p class="my_color">team</p>
+                                    <?php
+
+                                    $table = $data->query("select * from table_number");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h6 class='welcome'>" . $row["team"] . "</h6>";
+                                        }
+                                    }
+                                    ?>
                                     <div class="div_input"></div>
                                     <div class="div_input3" style="width: 170px; background-color: green;"></div>
                                     <div class="my_number1" style="background-color: green;">75%</div>
@@ -240,14 +295,32 @@
                                     <i class="fas fa-book icon" style="color: orange;"></i>
                                     <br>
                                     <br>
-                                    <h5 class="welcome">2500</h5>
+                                    <?php
+
+                                    $table = $data->query("select * from table_tickets");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h5 class='welcome'>" . $row["total"] . "</h5>";
+                                        }
+                                    }
+                                    ?>
                                     <p class="my_color">total</p>
                                 </div>
                                 <div class="div_icon">
                                     <i class="fas fa-spinner icon" style="color: blue;"></i>
                                     <br>
                                     <br>
-                                    <h5 class="welcome">500</h5>
+                                    <?php
+
+                                    $table = $data->query("select * from table_tickets");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h5 class='welcome'>" . $row["pending"] . "</h5>";
+                                        }
+                                    }
+                                    ?>
                                     <p class="my_color">pending</p>
                                 </div>
                             </div>
@@ -256,14 +329,32 @@
                                     <i class="fas fa-check icon" style="color: green;"></i>
                                     <br>
                                     <br>
-                                    <h5 class="welcome">1900</h5>
+                                    <?php
+
+                                    $table = $data->query("select * from table_tickets");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h5 class='welcome'>" . $row["closed"] . "</h5>";
+                                        }
+                                    }
+                                    ?>
                                     <p class="my_color">closed</p>
                                 </div>
                                 <div class="div_icon">
                                     <i class="fas fa-times icon" style="color: red;"></i>
                                     <br>
                                     <br>
-                                    <h5 class="welcome">100</h5>
+                                    <?php
+
+                                    $table = $data->query("select * from table_tickets");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h5 class='welcome'>" . $row["deleted"] . "</h5>";
+                                        }
+                                    }
+                                    ?>
                                     <p class="my_color">deleted</p>
                                 </div>
                             </div>
@@ -279,8 +370,17 @@
                                         <img src="image5/news-01.png" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">created sass section</h6>
-                                        <p class="my_color">new sass examples & tutorilas</p>
+                                        <?php
+
+                                        $table = $data->query("select * from table_iamge where id = 1");
+
+                                        if ($table->num_rows > 0) {
+                                            while ($row = $table->fetch_assoc()) {
+                                                print "<h6 class='welcome'>" . $row["stringg"] . "</h6>";
+                                                print "<p class='my_color'>" . $row["strin"] . "</p>";
+                                            }
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="div_number">3 days ago</div>
@@ -292,8 +392,17 @@
                                         <img src="image5/news-02.png" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">changed the design</h6>
-                                        <p class="my_color">a brand new website design</p>
+                                        <?php
+
+                                        $table = $data->query("select * from table_iamge where id = 2");
+
+                                        if ($table->num_rows > 0) {
+                                            while ($row = $table->fetch_assoc()) {
+                                                print "<h6 class='welcome'>" . $row["stringg"] . "</h6>";
+                                                print "<p class='my_color'>" . $row["strin"] . "</p>";
+                                            }
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="div_number">5 days ago</div>
@@ -305,8 +414,17 @@
                                         <img src="image5/news-03.png" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">team increased</h6>
-                                        <p class="my_color">3 developer joined the team</p>
+                                        <?php
+
+                                        $table = $data->query("select * from table_iamge where id = 3");
+
+                                        if ($table->num_rows > 0) {
+                                            while ($row = $table->fetch_assoc()) {
+                                                print "<h6 class='welcome'>" . $row["stringg"] . "</h6>";
+                                                print "<p class='my_color'>" . $row["strin"] . "</p>";
+                                            }
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="div_number">7 days ago</div>
@@ -318,8 +436,17 @@
                                         <img src="image5/news-04.png" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">added payment gateway</h6>
-                                        <p class="my_color">many new payment gateways added</p>
+                                        <?php
+
+                                        $table = $data->query("select * from table_iamge where id = 4");
+
+                                        if ($table->num_rows > 0) {
+                                            while ($row = $table->fetch_assoc()) {
+                                                print "<h6 class='welcome'>" . $row["stringg"] . "</h6>";
+                                                print "<p class='my_color'>" . $row["strin"] . "</p>";
+                                            }
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="div_number">9 days ago</div>
@@ -331,8 +458,17 @@
                             <h5 class="welcome">latest tasks</h5>
                             <div class="div_flex div_befor">
                                 <div class="div_right1">
-                                    <p class="welcome">record one new video</p>
-                                    <p class="my_color">record python create exe project</p>
+                                    <?php
+
+                                    $table = $data->query("select * from table_img where id = 1");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p class='welcome'>" . $row["stringg"] . "</p>";
+                                            print "<p class='my_color'>" . $row["strig"] . "</p>";
+                                        }
+                                    }
+                                    ?>
                                 </div>
                                 <div class="div_left1">
                                     <i class="far fa-trash-alt icon"></i>
@@ -340,8 +476,17 @@
                             </div>
                             <div class="div_flex div_befor">
                                 <div class="div_right1">
-                                    <p class="welcome">write article</p>
-                                    <p class="my_color">write low level vs high level languages</p>
+                                    <?php
+
+                                    $table = $data->query("select * from table_img where id = 2");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p class='welcome'>" . $row["stringg"] . "</p>";
+                                            print "<p class='my_color'>" . $row["strig"] . "</p>";
+                                        }
+                                    }
+                                    ?>
                                 </div>
                                 <div class="div_left1">
                                     <i class="far fa-trash-alt icon"></i>
@@ -349,8 +494,17 @@
                             </div>
                             <div class="div_flex div_befor">
                                 <div class="div_right1">
-                                    <p class="welcome">finish project</p>
-                                    <p class="my_color">publlish academy programming project</p>
+                                    <?php
+
+                                    $table = $data->query("select * from table_img where id = 3");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p class='welcome'>" . $row["stringg"] . "</p>";
+                                            print "<p class='my_color'>" . $row["strig"] . "</p>";
+                                        }
+                                    }
+                                    ?>
                                 </div>
                                 <div class="div_left1">
                                     <i class="far fa-trash-alt icon"></i>
@@ -371,8 +525,17 @@
                             </div>
                             <div class="div_flex div_befor">
                                 <div class="div_right1">
-                                    <p class="welcome">finish lesson</p>
-                                    <p class="my_color">finish teaching flex box</p>
+                                    <?php
+
+                                    $table = $data->query("select * from table_img where id = 4");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<p class='welcome'>" . $row["stringg"] . "</p>";
+                                            print "<p class='my_color'>" . $row["strig"] . "</p>";
+                                        }
+                                    }
+                                    ?>
                                 </div>
                                 <div class="div_left1">
                                     <i class="far fa-trash-alt icon"></i>
@@ -434,62 +597,62 @@
                             <div class="div_between">
                                 <div class="my_flex">
                                     <div class="div_image">
-                                        <img src="image5/pdf.svg" alt="">
+                                        <img src="image5/avi.svg" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">my-file.pdf</h6>
-                                        <p class="my_color">elzero</p>
+                                        <h6 class="welcome">my-file.avi</h6>
+                                        <p class="my_color">admin</p>
                                     </div>
                                 </div>
-                                <div class="div_number">2.9mb</div>
+                                <div class="div_number">4.9mb</div>
                             </div>
                             <div class="div_between">
                                 <div class="my_flex">
                                     <div class="div_image">
-                                        <img src="image5/pdf.svg" alt="">
+                                        <img src="image5/psd.svg" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">my-file.pdf</h6>
-                                        <p class="my_color">elzero</p>
+                                        <h6 class="welcome">my-file.psd</h6>
+                                        <p class="my_color">osama</p>
                                     </div>
                                 </div>
-                                <div class="div_number">2.9mb</div>
+                                <div class="div_number">4.5mb</div>
                             </div>
                             <div class="div_between">
                                 <div class="my_flex">
                                     <div class="div_image">
-                                        <img src="image5/pdf.svg" alt="">
+                                        <img src="image5/zip.svg" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">my-file.pdf</h6>
-                                        <p class="my_color">elzero</p>
+                                        <h6 class="welcome">my-file.zip</h6>
+                                        <p class="my_color">user</p>
                                     </div>
                                 </div>
-                                <div class="div_number">2.9mb</div>
+                                <div class="div_number">8.9mb</div>
                             </div>
                             <div class="div_between">
                                 <div class="my_flex">
                                     <div class="div_image">
-                                        <img src="image5/pdf.svg" alt="">
+                                        <img src="image5/dll.svg" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">my-file.pdf</h6>
-                                        <p class="my_color">elzero</p>
+                                        <h6 class="welcome">my-file.dll</h6>
+                                        <p class="my_color">admin</p>
                                     </div>
                                 </div>
-                                <div class="div_number">2.9mb</div>
+                                <div class="div_number">4.9mb</div>
                             </div>
                             <div class="div_between">
                                 <div class="my_flex">
                                     <div class="div_image">
-                                        <img src="image5/pdf.svg" alt="">
+                                        <img src="image5/eps.svg" alt="">
                                     </div>
                                     <div class="div_created">
-                                        <h6 class="welcome">my-file.pdf</h6>
-                                        <p class="my_color">elzero</p>
+                                        <h6 class="welcome">my-file.eps</h6>
+                                        <p class="my_color">desiner</p>
                                     </div>
                                 </div>
-                                <div class="div_number">2.9mb</div>
+                                <div class="div_number">8.9mb</div>
                             </div>
                         </div>
                     </div>
@@ -554,7 +717,17 @@
                                     <img src="image5/avatar.png" alt="">
                                 </div>
                                 <div class="div_name">
-                                    <h6>momen alzebda</h6>
+                                    <?php
+                                    $louk_id = $_GET["louk_session"];
+
+                                    $table = $data->query("select * from singup where id = $louk_id");
+
+                                    if ($table->num_rows > 0) {
+                                        while ($row = $table->fetch_assoc()) {
+                                            print "<h6>" . $row["name"] . "</h6>";
+                                        }
+                                    }
+                                    ?>
                                     <p class="my_color">about 3 hours ago</p>
                                 </div>
                             </div>
@@ -590,7 +763,9 @@
                                             <p class="my_p1" style="color: blue;">90k followers</p>
                                         </div>
                                         <div class="div_p1">
-                                            <p class="my_p2" style="background-color: #1877F2;">follow</p>
+                                            <a href="#">
+                                                <p class="my_p2" style="background-color: #1877F2;">follow</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -606,7 +781,9 @@
                                             <p class="my_p1" style="color: blue;">90k followers</p>
                                         </div>
                                         <div class="div_p1">
-                                            <p class="my_p2">like</p>
+                                            <a href="#">
+                                                <p class="my_p2">like</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -622,7 +799,9 @@
                                             <p class="my_p1" style="color: red;">1m subscribe</p>
                                         </div>
                                         <div class="div_p1">
-                                            <p class="my_p2" style="background-color: red;">subscribe</p>
+                                            <a href="#">
+                                                <p class="my_p2" style="background-color: red;">subscribe</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -638,7 +817,9 @@
                                             <p class="my_p1" style="color: blue;">70k followers</p>
                                         </div>
                                         <div class="div_p1">
-                                            <p class="my_p2">follow</p>
+                                            <a href="#">
+                                                <p class="my_p2">follow</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
