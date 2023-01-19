@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap5/css5/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap5/css5/project_four.css">
-    <title>settigns</title>
+    <title>SETTIGNS</title>
 </head>
 
 <body>
@@ -34,25 +34,10 @@
             <?php
             print "<a href='dashboard.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fas fa-chart-line icon'></i> <p class='my_P'>dashboard</p></div></a>";
             print "<a href='settings.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex my_all'><i class='fa-solid fa-gear icon'></i><p class='my_P'>settings</p></div></a>";
+            print "<a href='profile.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fa-solid fa-user icon'></i><p class='my_P'>profile</p></div></a>";
+            print "<a href='projects.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fas fa-project-diagram icon'></i><p class='my_P'>projects</p></div></a>";
+            print "<a href='courses.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fa-solid fa-graduation-cap icon'></i><p class='my_P'>courses</p></div></a>";
             ?>
-            <a href="#">
-                <div class="div_flex">
-                    <i class="fa-solid fa-user icon"></i>
-                    <p class="my_P">profile</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="div_flex">
-                    <i class="fas fa-project-diagram icon"></i>
-                    <p class="my_P">projects</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="div_flex">
-                    <i class="fa-solid fa-graduation-cap icon"></i>
-                    <p class="my_P">courses</p>
-                </div>
-            </a>
             <a href="#">
                 <div class="div_flex">
                     <i class="fa-solid fa-user icon"></i>

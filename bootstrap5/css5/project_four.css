@@ -375,6 +375,179 @@ body {
     margin-top: 20px;
 }
 
+.div_flex .div_right .container .row .div_col .div_box {
+    background-color: var(--color_white);
+    border-radius: 6px;
+    height: 500px;
+    padding: 4% 0% 0% 5%;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex {
+    display: flex;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage {
+    text-align: center;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage .my_before {
+    background-color: var(--color_ccc);
+    width: 110px;
+    height: 4px;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage .my_before::before {
+    content: "";
+    position: absolute;
+    margin-left: -54px;
+    width: 90px;
+    height: 4px;
+    background-color: #0075FF;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage .div_icon {
+    color: rgb(241, 206, 8);
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage::before {
+    content: "";
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 180px;
+    width: 400px;
+    height: 2px;
+    transform: rotate(90deg);
+    background-color: var(--color_eee);
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex {
+    display: flex;
+    gap: 120px;
+    margin-left: 70px;
+    transition: 0.5s;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex:hover {
+    background-color: var(--color_ccc);
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex .my_top {
+    margin-top: 40px;
+}
+
+.div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex .my_size {
+    margin-top: 32px;
+    position: absolute;
+    margin-left: 800px;
+    font-size: 25px;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_louk_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_louk_between .box_between .my_color {
+    font-size: 9px;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_louk_between .box_between img {
+    position: relative;
+    width: 40px;
+    border: 3px solid var(--color_white);
+    border-radius: 50px;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_box_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_box_between .div_width {
+    margin-top: 15px;
+    width: 50%;
+    height: 5px;
+    background-color: var(--color_ccc);
+    border-radius: 6px;
+    position: relative;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_box_between .div_width::before {
+    content: "";
+    width: 120px;
+    height: 5px;
+    position: absolute;
+    left: 0%;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_box_between .div_width .div_after {
+    background-color: red;
+    height: 5px;
+    border-radius: 6px;
+}
+
+.div_flex .div_right .container .row .div_col .my_hidth {
+    height: 300px;
+}
+
+.div_flex .div_right .container .row .div_col .card .image_team {
+    width: 50px;
+    border: 2px solid var(--color_white);
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.div_flex .div_right .container .row .div_col .card .card-body .my_button {
+    padding: 0%;
+    margin-top: -56px;
+    margin-left: 40px;
+    background-color: var(--color_blue);
+}
+
+.div_flex .div_right .container .row .div_col .card .card-body .my_button:hover {
+    background-color: red;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_my_between {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_my_between .div_flex {
+    display: flex;
+    gap: 10px;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_my_between .div_flex .icon {
+    color: var(--color_ccc);
+    margin-top: 3px;
+}
+
+.div_flex .div_right .container .row .div_col .card .card-img-top {
+    height: 150px;
+}
+
+.div_flex .div_right .container .row .div_col .card {
+    width: 130%;
+}
+
+.div_flex .div_right .container .div_flex_here {
+    display: flex;
+    gap: 40px;
+}
+
 /* end main1 */
 /* start main2 */
 .div_flex .div_right .container .row .div_col .div_tickets .div_flex {
@@ -547,6 +720,54 @@ body {
 .div_flex .div_right .container .row .div_col .div_quick .yes_flex .div_book:hover {
     cursor: pointer;
     border: 2px solid var(--color_blue);
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_cours {
+    background-color: var(--color_eee);
+    padding: 1%;
+    border-radius: 6px;
+}
+
+.div_flex .div_right .container .row .div_col .my_hint .div_hint::before {
+    content: "";
+    margin-top: 40px;
+    position: absolute;
+    width: 200px;
+    height: 0.5px;
+    background-color: var(--color_ccc);
+}
+
+.div_flex .div_right .container .row .div_col .div_top .here_image {
+    display: flex;
+    gap: 50%;
+}
+
+.div_flex .div_right .container .row .div_col .div_top .here_image img {
+    width: 50px;
+}
+
+.div_flex .div_right .container .row .div_col .div_top .here_image::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 0.5px;
+    margin-top: 90px;
+    background-color: var(--color_ccc);
+}
+
+.div_flex .div_right .container .row .div_col .my_hint {
+    height: 600px;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_p3 {
+    display: flex;
+    gap: 10px;
+}
+
+.div_flex .div_right .container .row .div_col .div_quick .my_p3 p {
+    background-color: var(--color_eee);
+    border-radius: 6px;
+    padding: 1%;
 }
 
 /* end main2 */
@@ -742,9 +963,25 @@ th {
 /* start media */
 @media (max-width: 1285px) and (min-width: 0px) {
 
+    .div_flex .div_right .container .row .div_col .div_quick .my_p3,
+    .div_flex .div_right .container .row .div_col .div_quick .my_box_between,
+    .div_flex .div_right .container .div_flex_here {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div_flex .div_right .container .div_flex_here .div_col {
+        width: 70%;
+    }
+
     .div_flex .div_left .my_name::after,
     .div_flex .div_right .container .row .div_col .div_latest .div_befor::before,
-    .div_flex .div_right .container .row .div_col .div_latest .div_between::before {
+    .div_flex .div_right .container .row .div_col .div_latest .div_between::before,
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_myimage::before,
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization hr,
+    .div_flex .div_right .container .row .div_col .div_top .here_image::before,
+    .div_flex .div_right .container .row .div_col .div_quick .my_box_between .div_width {
         display: none;
     }
 
@@ -775,9 +1012,25 @@ th {
     .div_flex .div_right .container .row .div_col .div_quick .yes_flex {
         gap: 0px;
     }
+
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex {
+        gap: 20px;
+        font-size: 8px;
+    }
+
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex .my_size {
+        margin-top: 32px;
+        position: absolute;
+        margin-left: 42%;
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 800px) and (min-width: 0px) {
+
+    .div_flex .div_right .container .row .div_col .div_box {
+        height: 1600px;
+    }
 
     .div_flex .div_left {
         width: 50px;
@@ -804,9 +1057,29 @@ th {
     .div_flex .div_right .container .row .div_col .div_quick .yes_flex,
     .div_flex .div_right .container .row .div_col .louk_flex,
     .div_flex .div_right .container .row .div_col .div_quick .div_open,
-    .div_flex .div_right .container .row .div_col .div_between_here {
+    .div_flex .div_right .container .row .div_col .div_between_here,
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex,
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex,
+    .div_flex .div_right .container .row .div_col .div_top,
+    .div_flex .div_right .container .row .div_col .div_top .here_image,
+    .div_flex .div_right .container .row .div_col .div_quick .my_louk_between {
         flex-direction: column;
         text-align: center;
+    }
+
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex {
+        margin-left: 0px;
+    }
+
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex {
+        font-size: 18px;
+    }
+
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex .my_size {
+        margin-top: 32px;
+        position: absolute;
+        margin-top: 80px;
+        font-size: 25px;
     }
 
     .div_flex .div_right .container .row .div_col .div_latest .div_between .my_flex .div_created {
@@ -820,7 +1093,8 @@ th {
         width: 100%;
     }
 
-    .div_flex .div_left .my_P {
+    .div_flex .div_left .my_P,
+    .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization hr {
         display: none;
     }
 
@@ -862,6 +1136,10 @@ th {
     .div_flex .div_right .container .row .div_col .div_yearly,
     .div_flex .div_right .container .row .div_col .div_tickets {
         height: 800px;
+    }
+
+    .div_flex .div_right .container .row .div_col .my_hidth {
+        height: 540px;
     }
 
     .div_flex .div_right .container .row .div_col .div_latest .div_between .my_flex .div_image img {
