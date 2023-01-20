@@ -553,6 +553,203 @@ body {
     gap: 40px;
 }
 
+.div_flex .div_right .container .row .div_col .card .im_flex {
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.div_flex .div_right .container .row .div_col .card .im_flex .icon {
+    background-color: var(--color_eee);
+    border-radius: 50px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.556);
+}
+
+.div_flex .div_right .container .row .div_col .card .im_flex .icon:hover {
+    cursor: pointer;
+    color: var(--color_white);
+    background-color: red;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_center {
+    text-align: center;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_center img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_center .div_button {
+    padding-top: 15px;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_flex {
+    display: flex;
+    gap: 8px;
+    padding-left: 10px;
+}
+
+.div_flex .div_right .container .row .div_col .card .div_flex .icon {
+    margin-top: 4.9px;
+}
+
+.div_flex .div_right .container .row .div_col .card .im_between {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3px;
+}
+
+.div_flex .div_right .container .row .div_col .card .im_between .im_button a {
+    text-decoration: none;
+    color: var(--color_white);
+    border-radius: 6px;
+    padding: 1px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod {
+    display: flex;
+    gap: 10px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 {
+    padding: 1%;
+    background-color: var(--color_white);
+    height: 220px;
+    width: 170px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 .icon {
+    color: rgba(0, 0, 0, 0.556);
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 .icon:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 .div_center {
+    text-align: center;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 .div_center img {
+    width: 55px;
+    transition: 0.3s;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 .div_center img:hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .my_height {
+    padding: 1%;
+    background-color: var(--color_white);
+    width: 200px;
+    height: 420px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .flex1 .div_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .my_height .div_right1 {
+    border: 2px solid var(--color_ccc);
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 4%;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .my_height .div_right1 .this_between {
+    display: flex;
+    gap: 30px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .my_height .div_right1 .this_between .div_p .my_color {
+    margin-top: -20px;
+    font-size: 10px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .my_height .div_right1 .div_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .im_button {
+    padding-left: 15%;
+    margin-top: 3px;
+    margin-left: 50px;
+}
+
+.div_flex .div_right .container .div_flex_dounwlod .im_icon {
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 19px;
+    color: var(--color_white);
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        margin-top: 19px;
+    }
+
+    50% {
+        margin-top: 12px;
+    }
+
+    100% {
+        margin-top: 19px;
+    }
+}
+
+.div_flex .div_right .container .row .div_col .my_hithe {
+    height: 670px;
+}
+
+.div_flex .div_right .container .row .div_col .my_hithe .div_box_color {
+    text-align: center;
+    color: var(--color_white);
+    padding: 20px;
+    border: 2px solid var(--color_white);
+}
+
+.div_flex .div_right .container .row .div_col .my_hithe .div_box_color h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.div_flex .div_right .container .row .div_col .my_hithe .div_box_color h5 span {
+    position: relative;
+    top: -8px;
+    left: -8px;
+}
+
+.div_flex .div_right .container .row .div_col .my_hithe .div_flex .momen_between {
+    display: flex;
+}
+
+.div_flex .div_right .container .row .div_col .my_hithe .div_flex .momen_between .icon {
+    background-color: var(--color_ccc);
+    padding: 1%;
+    border-radius: 6px;
+}
+
+.div_flex .div_right .container .row .div_col .im_flex_between {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
 /* end main1 */
 /* start main2 */
 .div_flex .div_right .container .row .div_col .div_tickets .div_flex {
@@ -970,10 +1167,30 @@ th {
 
     .div_flex .div_right .container .row .div_col .div_quick .my_p3,
     .div_flex .div_right .container .row .div_col .div_quick .my_box_between,
-    .div_flex .div_right .container .div_flex_here {
+    .div_flex .div_right .container .div_flex_here,
+    .div_flex .div_right .container .div_flex_dounwlod,
+    .div_flex .div_right .container .div_flex_dounwlod .my_height .div_right1 {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .div_flex .div_right .container .div_flex_dounwlod .my_height {
+        width: 75%;
+        height: 700px;
+        position: absolute;
+        top: 180px;
+    }
+
+    .div_flex .div_right .container .div_flex_dounwlod .flex1 {
+        position: relative;
+        top: 700px;
+        width: 100%;
+    }
+
+    .div_flex .div_right .container .div_flex_dounwlod .im_button {
+        margin-top: 3px;
+        margin-left: 50px;
     }
 
     .div_flex .div_right .container .div_flex_here .div_col {
@@ -1029,6 +1246,10 @@ th {
         margin-left: 42%;
         font-size: 25px;
     }
+
+    .div_flex .div_right .container .row .div_col .my_hithe {
+        height: 670px;
+    }
 }
 
 @media (max-width: 800px) and (min-width: 0px) {
@@ -1067,7 +1288,8 @@ th {
     .div_flex .div_right .container .row .div_col .div_box .yesthe_flex .div_Organization .the_flex,
     .div_flex .div_right .container .row .div_col .div_top,
     .div_flex .div_right .container .row .div_col .div_top .here_image,
-    .div_flex .div_right .container .row .div_col .div_quick .my_louk_between {
+    .div_flex .div_right .container .row .div_col .div_quick .my_louk_between,
+    .div_flex .div_right .container .row .div_col .card .im_between {
         flex-direction: column;
         text-align: center;
     }

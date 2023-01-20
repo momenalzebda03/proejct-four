@@ -37,25 +37,10 @@
             print "<a href='profile.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fa-solid fa-user icon'></i><p class='my_P'>profile</p></div></a>";
             print "<a href='projects.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex my_all'><i class='fas fa-project-diagram icon'></i><p class='my_P'>projects</p></div></a>";
             print "<a href='courses.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fa-solid fa-graduation-cap icon'></i><p class='my_P'>courses</p></div></a>";
+            print "<a href='frinde.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fa-solid fa-user icon'></i><p class='my_P'>frindes</p></div></a>";
+            print "<a href='files.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fas fa-file icon'></i><p class='my_P'>files</p></div></a>";
+            print "<a href='plans.php?louk_session=" . $_SESSION["session_id"] . "'><div class='div_flex'><i class='fa-solid fa-plane icon'></i><p class='my_P'>plans</p></div></a>";
             ?>
-            <a href="#">
-                <div class="div_flex">
-                    <i class="fa-solid fa-user icon"></i>
-                    <p class="my_P">frindes</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="div_flex">
-                    <i class="fas fa-file icon"></i>
-                    <p class="my_P">files</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="div_flex">
-                    <i class="fa-solid fa-plane icon"></i>
-                    <p class="my_P">plans</p>
-                </div>
-            </a>
         </div>
         <div class="div_right">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
