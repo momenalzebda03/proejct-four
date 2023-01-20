@@ -79,7 +79,7 @@
             <!-- end header -->
             <!-- start main -->
             <div class="div_main1">
-                <h2>settings</h2>
+                <h2>courses</h2>
                 <div class="div_afeter_before"></div>
             </div>
             <!-- end main -->
@@ -312,6 +312,52 @@
                         </div>
                     </div>
                     <!-- end main2 -->
+                    <!-- start main3 -->
+                    <div class="col-sm-12 col-md-6 col-lg-2 div_col">
+                        <div class="card">
+                            <img src="image5/team-03.png" class="image_team">
+                            <img src="image5/xml.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">xml language</h5>
+                                <p class="my_color">I am proficient in xml, this language works to build the structure of the site, how wonderful it is</p>
+                                <hr>
+                                <a href="#" class="btn btn-primary my_button">course info</a>
+                            </div>
+                            <div class="div_my_between">
+                                <div class="div_flex">
+                                    <i class="fas fa-user icon"></i>
+                                    <p class="my_color">950</p>
+                                </div>
+                                <div class="div_flex">
+                                    <i class="fas fa-dollar-sign icon"></i>
+                                    <p class="my_color">250</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-2 div_col">
+                        <div class="card">
+                            <img src="image5/team-03.png" class="image_team">
+                            <img src="image5/xml.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">xml language</h5>
+                                <p class="my_color">I am proficient in xml, this language works to build the structure of the site, how wonderful it is</p>
+                                <hr>
+                                <a href="#" class="btn btn-primary my_button">course info</a>
+                            </div>
+                            <div class="div_my_between">
+                                <div class="div_flex">
+                                    <i class="fas fa-user icon"></i>
+                                    <p class="my_color">950</p>
+                                </div>
+                                <div class="div_flex">
+                                    <i class="fas fa-dollar-sign icon"></i>
+                                    <p class="my_color">250</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end main3 -->
                 </div>
             </div>
         </div>
